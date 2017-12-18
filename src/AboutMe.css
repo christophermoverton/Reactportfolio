@@ -1,0 +1,21 @@
+#BgImage2 {
+    overflow: scroll;
+    top: 0%;
+    left: 0%;
+    position: fixed;
+    width: auto;
+    height: 120%;
+      -webkit-animation: kenburns-left 100s ease-out both, text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+              animation: kenburns-left 100s ease-out both, text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  }
+
+  #BgImage3 {
+    overflow: scroll;
+    top: 0%;
+    left: 0%;
+    position: fixed;
+    width: auto;
+    height: 120%;
+      -webkit-animation: kenburns-left 100s ease-out both, text-focus-in2 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+              animation: kenburns-left 100s ease-out both, text-focus-in2 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  }

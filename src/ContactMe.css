@@ -1,0 +1,77 @@
+#frame1{
+    
+    display: block;
+    
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    float: left;
+    z-index: auto;
+    width: 25%;
+    height: 25%;
+
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    cursor: default;
+    opacity: 1;
+    margin: 1% 0 auto;
+    padding: 2% 1%;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.1);
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    
+    color: rgb(231, 217, 241);
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    background: rgba(224,218,181,0.01);
+    -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+    box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+    text-shadow: 4px 4px 3px rgba(239,239,239,0.54) ;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+    -webkit-transform: none;
+    transform: none;
+    -webkit-transform-origin: 50% 50% 0;
+    transform-origin: 50% 50% 0;
+
+
+}
+
+#eText{
+    position: relative;
+ 
+    color: rgb(231, 217, 241);
+    letter-spacing: -0.00em;
+    fill: rgb(231, 217, 241);
+    font: 1.2vw 'Raleway';
+      -webkit-animation: tracking-in-expand 1.0s cubic-bezier(0.215, 0.610, 0.355, 1.000) both, text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: tracking-in-expand 1.0s cubic-bezier(0.215, 0.610, 0.355, 1.000) both, text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  
+  }
+
+  #gicon {
+    overflow: scroll;
+    position: absolute;
+    left: 75px;
+    top: 50%;
+    width: 35px;
+    height: 35px;
+    -webkit-animation:  text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation:  text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  }
+
+  #gicon2 {
+    overflow: scroll;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    width: 35px;
+    height: 35px;
+    -webkit-animation:  text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation:  text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  }

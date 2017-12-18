@@ -7,8 +7,8 @@
 
 #TitleText{
   position: absolute;
-  top: 100px;
-  left: 10%;
+  top: 200px;
+  left: 25%;
   letter-spacing: -0.00em;
   fill: rgb(231, 217, 241);
   color: rgb(231, 217, 241);
@@ -20,8 +20,8 @@
 
 #TitleText2{
   position: absolute;
-  top: 200px;
-  left: 10%;
+  top: 300px;
+  left: 25%;
   color: rgb(231, 217, 241);
   letter-spacing: -0.00em;
   fill: rgb(231, 217, 241);
@@ -29,6 +29,61 @@
 	-webkit-animation: tracking-in-expand 6.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both, text-focus-in 1.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   animation: tracking-in-expand 6.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both, text-focus-in 1.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 
+}
+
+#cbutton{
+  position: absolute;
+  top: 50px;
+  left:75px;
+  width: 135px;
+  height: 55px;
+  opacity: 0.4;
+  color: rgb(231, 217, 241);
+  font: 1.5vw 'Raleway';
+  -webkit-animation: tracking-in-expand 6.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both, text-focus-in 1.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: tracking-in-expand 6.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both, text-focus-in 1.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+#cbutton2{
+  position: absolute;
+  top: 50px;
+  left:150px;
+  width: 135px;
+  height: 55px;
+  opacity: 0.4;
+  color: rgb(231, 217, 241);
+  font: 1.5vw 'Raleway';
+  -webkit-animation: tracking-in-expand 6.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both, text-focus-in 1.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: tracking-in-expand 6.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both, text-focus-in 1.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+input:focus {
+  outline:none;
+}
+
+#cme{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left:10%;
+}
+
+#cme2{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left:0%;
+  -webkit-animation: text-focus-in 3.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in 3.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+#cme3{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left:0%;
+  -webkit-animation: text-focus-in2 3.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in2 3.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 #text1{
@@ -222,7 +277,30 @@ g#Layer_2 {
   }
 }
 
-
+@-webkit-keyframes text-focus-in2 {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 0;
+  }
+}
+@keyframes text-focus-in2 {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 0;
+  }
+}
 
 
 
