@@ -1,0 +1,46 @@
+[debug] [2017-12-21T20:51:06.825Z] ----------------------------------------------------------------------
+[debug] [2017-12-21T20:51:06.834Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\chris\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2017-12-21T20:51:06.835Z] CLI Version:   3.16.0
+[debug] [2017-12-21T20:51:06.835Z] Platform:      win32
+[debug] [2017-12-21T20:51:06.835Z] Node Version:  v9.0.0
+[debug] [2017-12-21T20:51:06.837Z] Time:          Thu Dec 21 2017 14:51:06 GMT-0600 (Central Standard Time)
+[debug] [2017-12-21T20:51:06.837Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-21T20:51:07.039Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-12-21T20:51:07.042Z] > authorizing via signed-in user
+[debug] [2017-12-21T20:51:07.051Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-12-21T20:51:07.052Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/VCSWNQZLVPaW__cDQH7qhIoUl7kSw1qP67tCpgbsZ3c',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Dec 21 2017 14:51:07 GMT-0600 (Central Standard Time)
+[debug] [2017-12-21T20:51:07.601Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-21T20:51:07.724Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/portfolio-e211f  
+  
+ Thu Dec 21 2017 14:51:07 GMT-0600 (Central Standard Time)
+[debug] [2017-12-21T20:51:08.333Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-21T20:51:08.336Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/portfolio-e211f/tokens  
+  
+ Thu Dec 21 2017 14:51:08 GMT-0600 (Central Standard Time)
+[debug] [2017-12-21T20:51:08.817Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'portfolio-e211f'...
+[info] 
+[info] i  deploying database, hosting
+[info] i  database: checking rules syntax...
+[debug] [2017-12-21T20:51:09.310Z] >>> HTTP REQUEST PUT https://portfolio-e211f.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+} 
+ Thu Dec 21 2017 14:51:09 GMT-0600 (Central Standard Time)
+[debug] [2017-12-21T20:51:09.754Z] <<< HTTP RESPONSE 200
+[info] +  database: rules syntax for database portfolio-e211f is valid
+[info] i  hosting: preparing build directory for upload...
+[debug] [2017-12-21T20:52:43.942Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/portfolio-e211f/uploads/-L0uq-rCRJhD_YrtbsEL?fileCount=17&message=  
+  
+ Thu Dec 21 2017 14:52:43 GMT-0600 (Central Standard Time)

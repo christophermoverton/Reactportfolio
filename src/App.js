@@ -11,9 +11,10 @@ import FirstWork from './FirstWork';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {show: false, show2: false, on: false}
+    this.state = {show: false, show2: false, show3: false, on: false, on2: false, on3: false}
     this.handleToggleClick = this.handleToggleClick.bind(this);
     this.handleToggleClick2 = this.handleToggleClick2.bind(this);
+    this.handleToggleClick3 = this.handleToggleClick3.bind(this);
     this.sleep = this.sleep.bind(this);
   }
   sleep (time) {
@@ -21,11 +22,73 @@ class App extends Component {
   }
 
   handleToggleClick() {
+    if (this.state.show2){
+      this.setState(prevState => ({
+        on: !prevState.on
+      }));
+      if (this.state.on){
+      this.sleep(500).then(() => {
+        this.setState(prevState => ({
+          show2: !prevState.show2
+        }));
+      })
+    }
+    }
+
+    if (this.state.show3){
+      this.setState(prevState => ({
+        on3: !prevState.on3
+      }));
+      if (this.state.on3){
+      this.sleep(500).then(() => {
+        this.setState(prevState => ({
+          show3: !prevState.show3
+        }));
+      })
+    }
+    }
+
     this.setState(prevState => ({
-      show: !prevState.show
+      on2: !prevState.on2
     }));
+    if (this.state.on2){
+      this.sleep(500).then(() => {
+        this.setState(prevState => ({
+          show: !prevState.show
+        }));
+      })
+    }
+    else{
+      this.setState(prevState => ({
+        show: !prevState.show
+      }));
+    }
   }
   handleToggleClick2() {  
+    if (this.state.show){
+      this.setState(prevState => ({
+        on2: !prevState.on2
+      }));
+      if (this.state.on2){
+      this.sleep(500).then(() => {
+        this.setState(prevState => ({
+          show: !prevState.show
+        }));
+      })
+    }
+    }
+    if (this.state.show3){
+      this.setState(prevState => ({
+        on3: !prevState.on3
+      }));
+      if (this.state.on3){
+      this.sleep(500).then(() => {
+        this.setState(prevState => ({
+          show3: !prevState.show3
+        }));
+      })
+    }
+    }
     this.setState(prevState => ({
       on: !prevState.on
     }));
@@ -42,6 +105,48 @@ class App extends Component {
     }));
   }
 }
+  handleToggleClick3(){
+    if (this.state.show){
+      this.setState(prevState => ({
+        on2: !prevState.on2
+      }));
+      if (this.state.on2){
+      this.sleep(500).then(() => {
+        this.setState(prevState => ({
+          show: !prevState.show
+        }));
+      })
+    }
+    }
+
+    if (this.state.show2){
+      this.setState(prevState => ({
+        on: !prevState.on
+      }));
+      if (this.state.on){
+      this.sleep(500).then(() => {
+        this.setState(prevState => ({
+          show2: !prevState.show2
+        }));
+      })
+    }
+    }
+    this.setState(prevState => ({
+      on3: !prevState.on3
+    }));
+    if (this.state.on3){
+    this.sleep(500).then(() => {
+      this.setState(prevState => ({
+        show3: !prevState.show3
+      }));
+    })
+  }
+  else{
+    this.setState(prevState => ({
+      show3: !prevState.show3
+    }));
+  }
+  }
 
   render() {
    //<button id="cbutton" onClick={this.handleToggleClick}>
@@ -63,11 +168,12 @@ class App extends Component {
       
     
       <div id="TitleText2" x="187.5" y="249.5"  width={250} height={200}>Full Stack Developer and Designer</div>
-          <ContactMe id="cme" show={this.state.show} />
+          <FirstWork   show={this.state.show3} on={this.state.on3} />
+          <ContactMe id="cme" show={this.state.show} on={this.state.on2}/>
           <AboutMe id="cme" show={this.state.show2} on={this.state.on}/>
           <div id="cbutton" onClick={this.handleToggleClick}>Contact Me</div>
-          <div id="cbutton2" onClick={this.handleToggleClick2}>About Me</div>
-      <FirstWork id="cme" show={true} />
+          <div id="cbutton2" onClick={this.handleToggleClick2}>About</div>
+          <div id="cbutton3" onClick={this.handleToggleClick3}>Work</div>
       </div>
       
     );

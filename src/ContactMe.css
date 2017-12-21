@@ -43,24 +43,47 @@
 }
 
 #eText{
-    position: relative;
- 
+    position: absolute;
+    left: 22.0vw;
+    top: 23.0vw;
     color: rgb(231, 217, 241);
     letter-spacing: -0.00em;
     fill: rgb(231, 217, 241);
-    font: 1.2vw 'Raleway';
+    font: 3.35vw 'Raleway';
+    text-decoration:none;
       -webkit-animation: tracking-in-expand 1.0s cubic-bezier(0.215, 0.610, 0.355, 1.000) both, text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     animation: tracking-in-expand 1.0s cubic-bezier(0.215, 0.610, 0.355, 1.000) both, text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   
   }
 
+  .eText{
+    position: absolute;
+    left: 22.0vw;
+    top: 17.0vw;
+
+    color: rgb(231, 217, 241);
+    letter-spacing: -0.00em;
+    fill: rgb(231, 217, 241);
+    font: 3.35vw 'Raleway';
+    text-decoration:none;
+      -webkit-animation: tracking-in-expand 1.0s cubic-bezier(0.215, 0.610, 0.355, 1.000) both, text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: tracking-in-expand 1.0s cubic-bezier(0.215, 0.610, 0.355, 1.000) both, text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  
+  }
+
+  .eText a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
   #gicon {
     overflow: scroll;
     position: absolute;
-    left: 75px;
-    top: 50%;
-    width: 35px;
-    height: 35px;
+    left: 30%;
+    top: 35vw;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
     -webkit-animation:  text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     animation:  text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   }
@@ -68,10 +91,12 @@
   #gicon2 {
     overflow: scroll;
     position: absolute;
-    left: 10px;
-    top: 50%;
-    width: 35px;
-    height: 35px;
+    left: calc(30% + 90px);
+    top: 35vw;
+    padding:10px;
+    width: 50px;
+    height: 50px;
     -webkit-animation:  text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     animation:  text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   }
+

@@ -19,3 +19,46 @@
       -webkit-animation: kenburns-left 100s ease-out both, text-focus-in2 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
               animation: kenburns-left 100s ease-out both, text-focus-in2 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   }
+
+  #pimage{
+      top: 12vw;
+      left: 5vw;
+      background-color: rgba(220,220,220, 0.95);
+      position: absolute;
+      width: 40vw;
+      height: auto;
+      opacity: 1.0;
+      mix-blend-mode: lighten;
+  }
+
+
+
+  #t1{
+    position: absolute;
+    top: 12vw;
+    left:46.5vw;
+    width: 52vw;
+    height: 80vh;
+    opacity: 0.4;
+    color: rgb(231, 217, 241);
+    font: 3.25vw 'Raleway';
+    -webkit-animation: tracking-in-expand 34.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both, text-focus-in 1.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: tracking-in-expand 34.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both, text-focus-in 1.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  }
+
+  #t3{
+    position: absolute;
+    top: 25vw;
+    left:8vw;
+    width: 90vw;
+    height: 80vh;
+    opacity: 0.4;
+    color: rgb(231, 217, 241);
+    font: 3.25vw 'Raleway';
+    -webkit-animation: tracking-in-expand 4.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both, text-focus-in 1.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: tracking-in-expand 4.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both, text-focus-in 1.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  }
+
+  #t2{
+      letter-spacing: -0.05em;
+  }

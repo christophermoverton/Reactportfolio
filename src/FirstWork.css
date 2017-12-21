@@ -1,29 +1,50 @@
 #frame2{
-    width: 55vw;
-    height: 70%;
+ 
     position: absolute;
-    top: 50%;
-    left: 35vw;
+    top: 20vh;
+    left: 0vw;
     border: none;
-    overflow: scroll;
+    
     opacity: 1.0;
+    width: 100%;
+    height: 100%;
 }
 
-iframe{
-    overflow: hidden;
+.resumeHeader{
+  font: 3.6vw 'Raleway';
+}
+
+.resumeHeader2{
+  font: 3.35vw 'Raleway';
+
+}
+
+.resumeLine{
+  font: 2.35vw 'Raleway';
 }
 
 #exp1{
     color: rgb(231, 217, 241);
     letter-spacing: -0.00em;
     fill: rgb(231, 217, 241);
-    font: 2.75vw 'Raleway';
+    font: 5.0vw 'Raleway';
+}
+
+.resumeVideo{
+  left: 30vw;
+  margin-left: 10vw;
+  width: 60.0vw;
+  height: auto;
 }
 
 #exp1:hover{
     
 	-webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+video.resumeVideo{
+  z-index: 999999;
 }
 
 /* ----------------------------------------------
@@ -49,11 +70,11 @@ iframe{
   @keyframes slide-fwd-center {
     0% {
       -webkit-transform: translateZ(0);
-              font-size: 2.75vw;
+              font-size: 5.0vw;
     }
     100% {
       -webkit-transform: translateZ(160px);
-              font-size: 2.90vw;
+              font-size: 5.2vw;
     }
   }
   
